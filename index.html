@@ -39,7 +39,8 @@
         </div>
 
         <div id="middle" class="mid-container">
-            <img id="yeshwanth-img" src="images/yeshwanth-black.jfif" alt="yeshwanth reddy nayini image">
+            <img id="yeshwanth-img" src="images/yeshwanth-black.jfif" alt="yeshwanth reddy nayini image"><br/>
+           
         </div>
 
         <div id="right" class="feature" style="background-color:rgb(212, 195, 195);">
@@ -74,7 +75,7 @@
                     $(".item-block-about").css("background-color", "rgb(139, 134, 134)");
                     $("#middle").empty();
                     $("#middle").append(
-                        '<h1>ABOUT</h1><br/><p id="about-content">I was born on 15 jan 1999.<br/> This is all about me, If wanna know more details, contact me.<br/> This is my personal website which I had created for the purpose of my practice rather than to show everyone else. If anyone want to suggest some changes you can mail me.</p>'
+                        '<h1>ABOUT</h1><br/><p id="about-content">I was born on 15 jan 1999. I am Indian.<br/> This is all about me, If wanna know more details, contact me.<br/> This is my personal website which I had created for the purpose of my practice rather than to show everyone else. If anyone want to suggest some changes you can mail me.</p>'
                         );
 
                 });
@@ -123,6 +124,14 @@
                     $("#middle").append('<h1>CONTACT ME</h1><p id="contacts-content"><a href="mailto:nayiniyeshwanthreddy@gmail.com" target="_blank"><img class="contacts-images" src="images/gmail.png" alt="gmail logo"></a><a href="https://www.linkedin.com/in/yeshwanth-reddy-nayini-6ab369167" target="_blank"><img class="contacts-images" src="images/linkedin.png" alt="linkedin logo"></a><a href="https://github.com/nayiniyeshwanthreddy" target="_blank"><img class="contacts-images" src="images/github.png" alt="github logo"></a><a href="https://www.facebook.com/yeshwanth.nayiniyeshwanthreddy" target="_blank"><img class="contacts-images" src="images/facebook.png" alt="facebook logo"></a><a href="https://twitter.com/yeshwanth_1599" target="_blank"><img class="contacts-images" src="images/twitter.png" alt="twitter logo"></a></p>');
                 });
 
+                $("header").click(function(){
+                    $("#middle").empty();
+                    $("#middle").append("<p><h1>Select any of the given options...</h1.</p>");
+                })
+                $("footer").click(function(){
+                    $("#middle").empty();
+$("#middle").append("<p><h1>Select any of the given options...</h1></p>");
+                })
 
             });
         </script>

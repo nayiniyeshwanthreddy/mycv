@@ -59,9 +59,11 @@ abbr{
 }
 
 #yeshwanth-img{
-    width: 50%;
-    height: 100%;
-    border-radius: 80%;
+    border: 20px #D3DEDC solid;
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    margin: 40px auto;
 }
 
 #about-content{
