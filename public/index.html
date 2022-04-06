@@ -5,55 +5,111 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
     <title>Practice</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles.css" />
+
 </head>
 
-<body>
+<body style="background-color:rgb(212, 195, 195);">
     <div id="container">
         <header id="header" style="background-color:rgb(212, 195, 195);">
             <h1 id="myname">Yeshwanth Reddy Nayini</h1>
         </header>
 
-        <div id="left" style="background-color:green;">
-            <div class="item-block" style="background-color: aqua;">
-                <div class="side-icons"><abbr title="about"><img style="width:80px; height:80px;" src="./images/user.png" alt="about me"></abbr>
+        <div id="left" style="background-color:rgb(212, 195, 195);">
+            <div class="item-block item-block-about">
+                <div class="side-icons"><abbr title="about"><img style="width:80px; height:80px;"
+                            src="./images/user.png" alt="about me"></abbr>
                 </div>
             </div>
-            <div class="item-block" style="background-color: rgb(245, 248, 248);">
-                <div class="side-icons"><abbr title="education"><img style="width:80px; height:80px;" src="./images/education.png" alt="education"></abbr>
-                    </div>
-                
+            <div class="item-block item-block-edu">
+                <div class="side-icons"><abbr title="education"><img style="width:80px; height:80px;"
+                            src="./images/education.png" alt="education"></abbr>
+                </div>
+
             </div>
-            <div class="item-block" style="background-color: aqua;">
-                <div class="side-icons"><abbr title="skills"><img style="width:80px; height:80px;" src="./images/skill.png" alt="skills"></abbr>
-                    </div>
-                
+            <div class="item-block item-block-skills">
+                <div class="side-icons"><abbr title="skills"><img style="width:80px; height:80px;"
+                            src="./images/skill.png" alt="skills"></abbr>
+                </div>
+
             </div>
         </div>
 
-        <div id="middle" style="background-color:yellow;"></div>
-        
-        <div id="right" style="background-color:#370080;">
-            <div class="item-block" style="background-color: aqua;">
-                <div class="side-icons"><abbr title="experience"><img style="width:80px; height:80px;" src="./images/experience.png" alt="images"></abbr>
-                    </div>
-                
+        <div id="middle" class="mid-container" style=" color: red;"></div>
+
+        <div id="right" style="background-color:rgb(212, 195, 195);">
+            <div class="item-block item-block-experience">
+                <div class="side-icons"><abbr title="experience"><img style="width:80px; height:80px;"
+                            src="./images/experience.png" alt="images"></abbr>
+                </div>
+
             </div>
-            <div class="item-block" style="background-color: rgb(250, 254, 254);">
-                <div class="side-icons"><abbr title="hobbies"><img style="width:80px; height:80px;" src="./images/hobbies.png" alt="hobbies"></abbr>
-                    </div>
-                
+            <div class="item-block item-block-hobbies">
+                <div class="side-icons"><abbr title="hobbies"><img style="width:80px; height:80px;"
+                            src="./images/hobbies.png" alt="hobbies"></abbr>
+                </div>
+
             </div>
-            <div class="item-block" style="background-color: aqua;">
-                <div class="side-icons"><abbr title="contact me"><img style="width:80px; height:80px;" src="./images/phone-book.png" alt="contact me"></abbr>
-                    </div>
-                
+            <div class="item-block item-block-contacts">
+                <div class="side-icons"><abbr title="contact me"><img style="width:80px; height:80px;"
+                            src="./images/phone-book.png" alt="contact me"></abbr>
+                </div>
+
             </div>
         </div>
 
         <footer id="footer" style="background-color:rgb(212, 195, 195) ;">
             <p style="font-weight: 600;">&copy; NYR 2022</p>
         </footer>
+
+        <script type="text/javascript">
+            $(function () {
+                $(".item-block-about").click(function () {
+                    $(".item-block").css("background-color", "rgb(212, 195, 195)");
+                    $(".item-block-about").css("background-color", "rgb(139, 134, 134)");
+                    $("#middle").empty();
+                    $("#middle").append('<h1>yeshwanth reddy nayini</h1>');
+
+                });
+
+                $(".item-block-edu").click(function () {
+                    $(".item-block").css("background-color", "rgb(212, 195, 195)");
+                    $(".item-block-edu").css("background-color", "rgb(139, 134, 134)");
+
+                });
+
+                $(".item-block-skills").click(function () {
+                    $(".item-block").css("background-color", "rgb(212, 195, 195)");
+                    $(".item-block-skills").css("background-color", "rgb(139, 134, 134)");
+
+                });
+
+                $(".item-block-experience").click(function () {
+                    $(".item-block").css("background-color", "rgb(212, 195, 195)");
+                    $(".item-block-experience").css("background-color", "rgb(139, 134, 134)");
+
+                });
+
+                $(".item-block-hobbies").click(function () {
+                    $(".item-block").css("background-color", "rgb(212, 195, 195)");
+                    $(".item-block-hobbies").css("background-color", "rgb(139, 134, 134)");
+
+                });
+
+                $(".item-block-contacts").click(function () {
+                    $(".item-block").css("background-color", "rgb(212, 195, 195)");
+                    $(".item-block-contacts").css("background-color", "rgb(139, 134, 134)");
+
+                });
+
+
+            });
+        </script>
+
+
     </div>
 </body>
 
