@@ -3,7 +3,7 @@
 
 <head lang="en">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Practice</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <div id="middle" class="mid-container" style=" color: red;"></div>
+        <div id="middle" class="mid-container" ></div>
 
         <div id="right" style="background-color:rgb(212, 195, 195);">
             <div class="item-block item-block-experience">
@@ -71,38 +71,44 @@
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-about").css("background-color", "rgb(139, 134, 134)");
                     $("#middle").empty();
-                    $("#middle").append('<h1>yeshwanth reddy nayini</h1>');
+                    $("#middle").append('<h1>ABOUT</h1>');
 
                 });
 
                 $(".item-block-edu").click(function () {
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-edu").css("background-color", "rgb(139, 134, 134)");
+                    $("#middle").empty();
+                    $("#middle").append('<h1>EDUCATION</h1>');
 
                 });
 
                 $(".item-block-skills").click(function () {
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-skills").css("background-color", "rgb(139, 134, 134)");
-
+$("#middle").empty();
+                    $("#middle").append('<h1>SKILLS</h1>');
                 });
 
                 $(".item-block-experience").click(function () {
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-experience").css("background-color", "rgb(139, 134, 134)");
-
+$("#middle").empty();
+                    $("#middle").append('<h1>EXPERIENCE</h1>');
                 });
 
                 $(".item-block-hobbies").click(function () {
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-hobbies").css("background-color", "rgb(139, 134, 134)");
-
+$("#middle").empty();
+                    $("#middle").append('<h1>HOBBIES</h1>');
                 });
 
                 $(".item-block-contacts").click(function () {
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-contacts").css("background-color", "rgb(139, 134, 134)");
-
+$("#middle").empty();
+                    $("#middle").append('<h1>CONTACT ME</h1>');
                 });
 
 
