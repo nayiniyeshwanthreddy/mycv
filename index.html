@@ -3,7 +3,7 @@
 
 <head lang="en">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
             <h1 id="myname">Yeshwanth Reddy Nayini</h1>
         </header>
 
-        <div id="left" style="background-color:rgb(212, 195, 195);">
+        <div id="left" class="feature" style="background-color:rgb(212, 195, 195);">
             <div class="item-block item-block-about">
                 <div class="side-icons"><abbr title="about"><img style="width:80px; height:80px;"
                             src="./images/user.png" alt="about me"></abbr>
@@ -38,9 +38,11 @@
             </div>
         </div>
 
-        <div id="middle" class="mid-container" ></div>
+        <div id="middle" class="mid-container">
+            <img id="yeshwanth-img" src="images/yeshwanth-black.jfif" alt="yeshwanth reddy nayini image">
+        </div>
 
-        <div id="right" style="background-color:rgb(212, 195, 195);">
+        <div id="right" class="feature" style="background-color:rgb(212, 195, 195);">
             <div class="item-block item-block-experience">
                 <div class="side-icons"><abbr title="experience"><img style="width:80px; height:80px;"
                             src="./images/experience.png" alt="images"></abbr>
@@ -71,7 +73,9 @@
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-about").css("background-color", "rgb(139, 134, 134)");
                     $("#middle").empty();
-                    $("#middle").append('<h1>ABOUT</h1>');
+                    $("#middle").append(
+                        '<h1>ABOUT</h1><br/><p id="about-content">I was born on 15 jan 1999.<br/> This is all about me, If wanna know more details, contact me.<br/> This is my personal website which I had created for the purpose of my practice rather than to show everyone else. If anyone want to suggest some changes you can mail me.</p>'
+                        );
 
                 });
 
@@ -79,36 +83,44 @@
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-edu").css("background-color", "rgb(139, 134, 134)");
                     $("#middle").empty();
-                    $("#middle").append('<h1>EDUCATION</h1>');
+                    $("#middle").append(
+                        '<h1>EDUCATION</h1><br/><p id="education-content"><dl><dt>Undergraduation</dt><dd>I had done my undergraduation in Mechanical Engineering. I had gained 7.56/10 CGPA in this degree from Anurag Group of Institutions in the year 2020. </dd><dt>Graduation</dt><dd>I am currently persuing my masters in Information Studies in Trine University.</dd></dl></p>'
+                        );
 
                 });
 
                 $(".item-block-skills").click(function () {
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-skills").css("background-color", "rgb(139, 134, 134)");
-$("#middle").empty();
-                    $("#middle").append('<h1>SKILLS</h1>');
+                    $("#middle").empty();
+                    $("#middle").append(
+                        '<h1>SKILLS</h1><br/><p id="skills-content">I got some programming skills like, </p><br/><p id="skills-content-ul" ><b><ul><li>HTML</li><li>CSS</li><li>javascript</li><li>JQuery</li><li>NodeJS</li><li>ExpressJS</li><li>ReactJS</li><li>MongoDB</li></ul></b></p><br/><p class="skills-content-p">I got intermediate knowledge in these skills, but not worked for any project, Creating my portfolio is my first project and currently, I am gaining knowledge in web development to become professional.</p>'
+                        );
                 });
 
                 $(".item-block-experience").click(function () {
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-experience").css("background-color", "rgb(139, 134, 134)");
-$("#middle").empty();
-                    $("#middle").append('<h1>EXPERIENCE</h1>');
+                    $("#middle").empty();
+                    $("#middle").append(
+                        '<h1>EXPERIENCE</h1> <br/><p id="experience-content">I had got no experience till now. After getting my undergraduation degree in <strong>Mechanical Engineering</strong>, I had started practicing coding because of my interest towards coding. Later I applied for <strong>Masters in Information Studies</strong> and currently persuing my degree. Now I am trying to get an internship as <strong>full stack web developer</strong>.</p>'
+                        );
                 });
 
                 $(".item-block-hobbies").click(function () {
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-hobbies").css("background-color", "rgb(139, 134, 134)");
-$("#middle").empty();
-                    $("#middle").append('<h1>HOBBIES</h1>');
+                    $("#middle").empty();
+                    $("#middle").append(
+                        '<h1>HOBBIES</h1><p id="hobbies-content"> <b><ul><li>Coding</li><li>Listening Epics</li></ul></b><br/></p><p class="hobbies-content-p">These are the only things I spend most of my time.</p>'
+                        );
                 });
 
                 $(".item-block-contacts").click(function () {
                     $(".item-block").css("background-color", "rgb(212, 195, 195)");
                     $(".item-block-contacts").css("background-color", "rgb(139, 134, 134)");
-$("#middle").empty();
-                    $("#middle").append('<h1>CONTACT ME</h1>');
+                    $("#middle").empty();
+                    $("#middle").append('<h1>CONTACT ME</h1><p id="contacts-content"><a href="mailto:nayiniyeshwanthreddy@gmail.com" target="_blank"><img class="contacts-images" src="images/gmail.png" alt="gmail logo"></a><a href="https://www.linkedin.com/in/yeshwanth-reddy-nayini-6ab369167" target="_blank"><img class="contacts-images" src="images/linkedin.png" alt="linkedin logo"></a><a href="https://github.com/nayiniyeshwanthreddy" target="_blank"><img class="contacts-images" src="images/github.png" alt="github logo"></a><a href="https://www.facebook.com/yeshwanth.nayiniyeshwanthreddy" target="_blank"><img class="contacts-images" src="images/facebook.png" alt="facebook logo"></a><a href="https://twitter.com/yeshwanth_1599" target="_blank"><img class="contacts-images" src="images/twitter.png" alt="twitter logo"></a></p>');
                 });
 
 

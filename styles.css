@@ -31,10 +31,10 @@ abbr{
     position: absolute;
     width: 80px;
     height: 80px;
+    
 
 
 }
-
 
 #left {
     position: absolute;
@@ -55,6 +55,75 @@ abbr{
     background-color:rgb(139, 134, 134);
     color: black;
     text-align: center;
+    font-style: oblique;
+}
+
+#yeshwanth-img{
+    width: 50%;
+    height: 100%;
+    border-radius: 80%;
+}
+
+#about-content{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    font-weight: 300;
+    font-size:large;
+    margin: 5px 30px;
+}
+
+dl {
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 300;
+    font-size:large;
+    margin: 5px 10px;
+  }
+
+dl dt{
+    font-weight: 500;
+    font-size:xx-large ;
+}
+
+#skills-content{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    font-weight: 300;
+    font-size:large;
+    margin:0px 30px;
+}
+
+.skills-content-ul{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    font-weight: 300;
+    font-size:large;
+    margin: 0px 30px;
+}
+
+.skills-content-p{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    font-weight: 300;
+    font-size:large;
+    margin: 0px 30px;
+}
+
+ul{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    list-style-type:none;
+    font-size: x-large;
 }
 
 #right {
@@ -64,6 +133,53 @@ abbr{
     height: 84%;
     right: 0%;
 
+}
+
+#education-content{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    font-weight: 300;
+    font-size:large;
+}
+
+#experience-content{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    font-weight: 300;
+    font-size:large;
+    margin: 5px 30px;
+}
+
+#hobbies-content{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    font-weight: 300;
+    font-size:large;
+}
+
+.hobbies-content-p{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+    font-weight: 300;
+    font-size:large;
+    padding: 5px 10px;
+}
+
+#contacts-content{
+    display: inline-block;
+    background-color:rgb(212, 195, 195);
+    border-radius: 5px; 
+}
+
+.contacts-images{
+    width: 80px;
+    height: 80px;
+    margin: 10px 25px;
+    
 }
 
 .item-block {
@@ -76,4 +192,6 @@ abbr{
     background-color: rgb(212, 195, 195);
     border-radius: 30px;
 }
+
+
 
